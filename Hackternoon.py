@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 
-chosen_directory = r'C:\Users\chmer\Dropbox (UFL)\C&DShare\Data for Integrating\to_Integrate'
+chosen_directory = ""
 os.chdir(chosen_directory)
 
 chosen_image = 'avg_image_3_DyIG_60k_fusedSi.tiff'

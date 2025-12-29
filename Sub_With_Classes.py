@@ -7,16 +7,18 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from classes import Subtract_Save
 
+file_total = ""
+file_substrate = ""
 
-result = Subtract_Save.subtract_and_store("C:\\Users\\chmer\\SubtractionFiles\\Final_fused_Si_E.txt", "C:\\Users\\chmer\\SubtractionFiles\\Final_DyIg_60k_Fused_Si.txt")
+result = Subtract_Save.subtract_and_store(file_total, file_substrate)
 
 # Separate coordinates into lists
 keys = list(result.keys())
 values = list(result.values())
 
 # Parse data from the input files
-data1 = Subtract_Save.parse_file("C:\\Users\\chmer\\SubtractionFiles\\Final_fused_Si_E.txt")
-data2 = Subtract_Save.parse_file("C:\\Users\\chmer\\SubtractionFiles\\Final_DyIg_60k_Fused_Si.txt")
+data1 = Subtract_Save.parse_file(file_total)
+data2 = Subtract_Save.parse_file(file_substrate)
 
 keys_data1 = list(data1.keys())
 values_data1 = list(data1.values())
